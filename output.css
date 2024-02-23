@@ -1603,13 +1603,13 @@ video {
 @font-face {
   font-family: MontHeavy;
 
-  src: url('../src/fonts/Mont-HeavyDEMO.otf');
+  src: url('fonts/Mont-HeavyDEMO.otf');
 }
 
 @font-face {
   font-family: MontLight;
 
-  src: url('../src/fonts/Mont-ExtraLightDEMO.otf');
+  src: url('fonts/Mont-ExtraLightDEMO.otf');
 }
 
 .border-3 {
