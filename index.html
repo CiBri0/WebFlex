@@ -1,0 +1,186 @@
+<!doctype html>
+<html class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="output.css" rel="stylesheet">
+        <script src="script.js"></script>
+        <title>WebFlex</title>
+    </head>
+    <body class="font-montligth" id="page">
+        <!--Navbar-->
+        <header class="fixed h-10 sm:h-20 w-screen backdrop-blur-lg text-base sm:text-2xl shadow-4xl transition-all z-40 text-white inset-0 px-5 sm:px-20 lg:px-40" id="navbar">
+            <div class="float-left h-full flex">
+                <a href="index.html" class="sm:text-4xl text-3xl font-montheavy text-white my-auto">WebFlex</a>
+            </div>
+
+            <div class="float-right h-full flex">
+                <div class="hidden lg:flex text-sm sm:text-lg my-auto mr-2 sm:mr-5">
+                    <a href="#creations" class="sm:ml-5 ml-2 relative block transition-all after:absolute after:w-full after:h-0.5 after:left-0 after:top-full after:bg-white after:transition-transform after:scale-x-0 after:origin-right after:hover:scale-x-100 hover:after:origin-left after:duration-500">Nos creations</a>
+                    <a href="#newsletter" class="sm:ml-5 ml-2 relative block transition-all after:absolute after:w-full after:h-0.5 after:left-0 after:top-full after:bg-white after:transition-transform after:scale-x-0 after:origin-right after:hover:scale-x-100 hover:after:origin-left after:duration-500">Notre newsletter</a>
+                </div>
+                <a href="page/contact.html" class="hidden sm:flex text-black text-sm sm:text-lg rounded-full bg-app-CALL h-auto px-6 py-1.5 sm:px-14 sm:py-3 my-auto transition-all shadow-4xl hover:bg-app-ACCENT active:bg-app-ACCENTSTRONG">
+                    <strong>Nous contacter</strong>
+                </a>
+                <button onclick="document.getElementById('menu').style.display = 'block';document.getElementsByTagName('html')[0].style.overflow = 'hidden'" class="sm:hidden aspect-square h-8 my-auto">
+                    <svg viewBox="0 -960 960 960" class="fill-white"><path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg>
+                </button>
+            </div>
+        </header>
+        <!--Front-->
+        <div class="h-[75vh] sm:h-screen w-full bg-cover bg-center -z-20 fixed inset-0 flex text-white" style="background-image: url(img/bg.png);" id="bg">
+            <div class="mx-auto mt-40 text-center">
+                <h1 class="text-7xl sm:text-[10rem] mb-5 font-montheavy">WebFlex</h1>
+                <h2 class="text-3xl sm:text-5xl">Des sites web sur mesure, sans compromis.</h2>
+            </div>
+        </div>
+        <!--Capacités-->
+        <div class="mt-[60vh] sm:mt-[100vh]">
+            <div class="w-full z-10">
+                <svg viewBox="0 0 1440 320">
+                    <path class="fill-app-MAIN" d="M0,32L48,64C96,96,192,160,288,181.3C384,203,480,181,576,197.3C672,213,768,267,864,282.7C960,299,1056,277,1152,234.7C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                </svg>
+                <div class="bg-app-MAIN">
+                    <svg viewBox="0 0 1440 320">
+                        <path class="fill-app-CALL" d="M0,128L48,149.3C96,171,192,213,288,197.3C384,181,480,107,576,90.7C672,75,768,117,864,160C960,203,1056,245,1152,224C1248,203,1344,117,1392,74.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="h-auto w-full bg-app-CALL">
+                <div class="h-72 sm:h-48 text-black w-full pt-20 mb-48 text-lg sm:text-2xl">
+                    <div class="flex mb-10">
+                        <h3 class="text-center max-w-xs sm:max-w-5xl mx-auto">Liberez votre <strong>creativite en ligne</strong> avec notre plateforme tout-en-un ! Que vous ayez besoin d'un <strong>site web professionnel</strong>, <strong>d'e-mails personnalises</strong> ou de <strong>scripts Python puissants</strong>, nous sommes la pour vous accompagner a chaque etape de sa creation et ceux gratuitement !</h3>
+                    </div>
+                    <div class="flex">
+                        <button class="rounded-lg bg-app-CALL m-auto px-24 py-5 transition-all shadow-4xl active:translate-y-3 hover:bg-app-ACCENT active:bg-app-ACCENTSTRONG">Nos expertises</button>
+                    </div>
+                </div>
+
+                <div class="w-full z-10">
+                    <svg viewBox="0 0 1440 320">
+                        <path class="fill-black" d="M0,64L48,96C96,128,192,192,288,197.3C384,203,480,149,576,138.7C672,128,768,160,864,144C960,128,1056,64,1152,58.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!--Creation-->
+        <div class="bg-black z-20 pt-20" id="creations">
+            <h2 class="text-white text-3xl sm:text-5xl text-center w-full">
+                Certaines de nos creations
+            </h2>
+
+            <div class="w-full flex py-20 sm:text-base text-sm">
+                <div class="w-4/5 sm:h-[70vh] aspect-square sm:aspect-auto grid sm:grid-cols-5 sm:grid-rows-5 grid-rows-6 grid-cols-6 mx-auto gap-7">
+                    <div class="sm:row-span-3 sm:col-span-2 row-span-3 col-span-3 w-full h-full bg-cover bg-center" style="background-image: url(img/portfolio.jpg);">
+                        <a href="page/portfolio/index.html" class="w-full h-full">
+                            <div class="backdrop-blur-lg w-[calc(100%+1rem)] h-[calc(100%+1rem)] flex opacity-0 hover:opacity-100 -translate-x-[0.5rem] -translate-y-[0.5rem]" style="transition-duration: 500ms;">
+                                <h3 class="m-auto text-white text-center">Mon premier portfolio</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="sm:row-span-2 sm:col-span-3 row-span-4 col-span-3 w-full h-full bg-cover bg-center" style="background-image: url(img/bugatti.webp);">
+                        <a href="page/bugatti/index.html" class="w-full h-full">
+                            <div class="backdrop-blur-lg w-[calc(100%+1rem)] h-[calc(100%+1rem)] flex opacity-0 hover:opacity-100 -translate-x-[0.5rem] -translate-y-[0.5rem]" style="transition-duration: 500ms;">
+                                <h3 class="m-auto text-white text-center">Copie du site de Bugatti</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="sm:row-span-3 sm:col-span-2 row-span-2 col-span-3 w-full h-full bg-cover bg-center" style="background-image: url(img/forward.png);">
+                        <a href="page/forward/index.html" class="w-full h-full">
+                            <div class="backdrop-blur-lg w-[calc(100%+1rem)] h-[calc(100%+1rem)] flex opacity-0 hover:opacity-100 -translate-x-[0.5rem] -translate-y-[0.5rem]" style="transition-duration: 500ms;">
+                                <h3 class="m-auto text-white text-center">Site d'agence de design</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="sm:row-span-3 sm:col-span-1 row-span-4 col-span-3 w-full h-full bg-cover bg-center">
+                        <a href="#" class="w-full h-full">
+                            <div class="backdrop-blur-lg w-[calc(100%+1rem)] h-[calc(100%+1rem)] flex opacity-0 hover:opacity-100 -translate-x-[0.5rem] -translate-y-[0.5rem]" style="transition-duration: 500ms;">
+                                <h3 class="m-auto text-white text-center">Futur projets ...</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="sm:row-span-2 sm:col-span-2 row-span-3 col-span-3 w-full h-full bg-cover bg-center" style="background-image: url(img/ruby.jpg);">
+                        <a href="https://github.com/CiBri0/Ruby-Game-Engine" class="w-full h-full">
+                            <div class="backdrop-blur-lg w-[calc(100%+1rem)] h-[calc(100%+1rem)] flex opacity-0 hover:opacity-100 -translate-x-[0.5rem] -translate-y-[0.5rem]" style="transition-duration: 500ms;">
+                                <h3 class="m-auto text-white text-center">Un Game Engine en Ruby</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Newsletter-->
+        <div class="h-full bg-black p-10 sm:p-20" id="newsletter">
+            <div class="bg-app-CALL w-full h-0.5 rounded-lg"></div>
+
+            <h2 class="text-white text-3xl sm:text-5xl text-center w-full my-20">
+                Rejoindre notre newsletter
+            </h2>
+
+            <form method="post" class="text-center">
+                <input type="email" class="w-5/6 text-base sm:text-xl p-3 rounded-full appearance-none border-none" placeholder="Votre adresse e-mail">
+            </form>
+        </div>
+        <!--Info-->
+        <div class="h-full bg-black sm:py-32 sm:px-40 py-16 px-20">
+            <div class="sm:grid sm:grid-cols-3 sm:grid-rows-1 sm:gap-10">
+                <div class="mb-10 sm:mb-0">
+                    <h4 class="text-app-CALL text-xl w-full mb-5">
+                        Qui sommes-nous ?
+                    </h4>
+
+                    <p class="text-white text-lg w-full">
+                        Nous sommes WebFlex, une agence web et Python engagée à offrir des solutions innovantes. Notre équipe passionnée travaille pour fournir des services de qualité tout en développant nos compétences grâce à vos 2202 projet d'entraînement gratuit.
+                    </p>
+                </div>
+
+                <div class="mb-10 sm:mb-0">
+                    <h4 class="text-app-CALL text-xl w-full mb-5">
+                        Pourquoi gratuit ?
+                    </h4>
+
+                    <p class="text-white text-lg w-full">
+                        WebFlex est un projet d'entraînement qui vise à aider les utilisateurs tout en offrant une expérience précieuse au développeur, c'est pourquoi il est vous est proposé gratuitement.
+                    </p>
+                </div>
+
+                <div class="mb-10 sm:mb-0">
+                    <h4 class="text-app-CALL text-xl w-full mb-5">
+                        D'ou proviennent les images ?
+                    </h4>
+                    <p class="text-white text-lg w-full">
+                        Les images utilisées sur WebFlex proviennent de Webflex, de l'IA Midjourney ou de bank d'image gratuite en ligne.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--Menu-->
+        <div class="hidden top-0 fixed z-50 h-screen w-screen backdrop-blur-md" id="menu">
+            <div class="h-full w-full bg-black opacity-75 text-white">
+                <header class="h-10 w-screen backdrop-blur-lg text-base sm:text-2xl shadow-4xl transition-all z-40 text-white inset-0 px-5 sm:px-40" id="navbar">
+                    <div class="float-right flex h-full">
+                        <button onclick="quit()" class="aspect-square h-8 my-auto">
+                            <svg viewBox="0 -960 960 960" class="fill-white"><path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg>
+                        </button>
+                    </div>
+                </header>
+
+                <div class="text-xl ml-5">
+                    <div><a href="" class="inline-block mb-3 relative transition-all after:absolute after:w-full after:h-0.5 after:left-0 after:top-full after:bg-white after:transition-transform after:scale-x-0 after:origin-right after:hover:scale-x-100 hover:after:origin-left after:duration-500">Nos services</a></div>
+                    <div><a onclick="quit()" href="#creations" class="inline-block mb-3 relative transition-all after:absolute after:w-full after:h-0.5 after:left-0 after:top-full after:bg-white after:transition-transform after:scale-x-0 after:origin-right after:hover:scale-x-100 hover:after:origin-left after:duration-500">Nos creations</a></div>
+                    <div><a onclick="quit()" href="#newsletter" class="inline-block mb-3 relative transition-all after:absolute after:w-full after:h-0.5 after:left-0 after:top-full after:bg-white after:transition-transform after:scale-x-0 after:origin-right after:hover:scale-x-100 hover:after:origin-left after:duration-500">Notre newsletter</a></div>
+                    <a href="" class="inline-block mb-3 relative transition-all after:absolute after:w-full after:h-0.5 after:left-0 after:top-full after:bg-white after:transition-transform after:scale-x-0 after:origin-right after:hover:scale-x-100 hover:after:origin-left after:duration-500">Nous contacter</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+<!--
+
+-->

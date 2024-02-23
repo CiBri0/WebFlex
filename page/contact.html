@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/dist/output.css" rel="stylesheet">
+        <script src="script.js"></script>
+        <title>WebFlex</title>
+    </head>
+    <body class="font-montligth" id="page">
+        <!--Navbar-->
+        <header class="fixed h-10 sm:h-20 w-screen backdrop-blur-lg text-base sm:text-2xl shadow-4xl transition-all z-40 text-white inset-0 px-5 sm:px-20 lg:px-40 pt-10" id="navbar">
+            <div class="h-full w-full flex">
+                <a href="index.html" class="sm:text-4xl text-3xl font-montheavy text-white my-auto mx-auto">WebFlex</a>
+            </div>
+        </header>
+
+        <div class="w-full bg-black text-white text-lg pt-20 sm:pt-64 h-screen">
+            <div class="text-5xl text-center mb-20">
+                <h3>Un projet ? Une question ?</h3>
+                <h3>Contactez nous !</h3>
+            </div>
+
+            <h5 class="text-4xl text-center">
+                E-mail : *********@*****.com
+            </h5>
+
+        </div>
+
+        <!--Menu-->
+        <div class="hidden top-0 fixed z-50 h-screen w-screen backdrop-blur-md" id="menu">
+            <div class="h-full w-full bg-black opacity-75 text-white">
+                <header class="h-10 w-screen backdrop-blur-lg text-base sm:text-2xl shadow-4xl transition-all z-40 text-white inset-0 px-5 sm:px-40" id="navbar">
+                    <div class="float-right flex h-full">
+                        <button onclick="quit()" class="aspect-square h-8 my-auto">
+                            <svg viewBox="0 -960 960 960" class="fill-white"><path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg>
+                        </button>
+                    </div>
+                </header>
+
+                <div class="text-xl ml-5">
+                    <div><a href="" class="inline-block mb-3 relative transition-all after:absolute after:w-full after:h-0.5 after:left-0 after:top-full after:bg-white after:transition-transform after:scale-x-0 after:origin-right after:hover:scale-x-100 hover:after:origin-left after:duration-500">Nos services</a></div>
+                    <div><a onclick="quit()" href="#creations" class="inline-block mb-3 relative transition-all after:absolute after:w-full after:h-0.5 after:left-0 after:top-full after:bg-white after:transition-transform after:scale-x-0 after:origin-right after:hover:scale-x-100 hover:after:origin-left after:duration-500">Nos creations</a></div>
+                    <div><a onclick="quit()" href="#newsletter" class="inline-block mb-3 relative transition-all after:absolute after:w-full after:h-0.5 after:left-0 after:top-full after:bg-white after:transition-transform after:scale-x-0 after:origin-right after:hover:scale-x-100 hover:after:origin-left after:duration-500">Notre newsletter</a></div>
+                    <a href="" class="inline-block mb-3 relative transition-all after:absolute after:w-full after:h-0.5 after:left-0 after:top-full after:bg-white after:transition-transform after:scale-x-0 after:origin-right after:hover:scale-x-100 hover:after:origin-left after:duration-500">Nous contacter</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
